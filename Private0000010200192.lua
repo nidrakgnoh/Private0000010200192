@@ -2,9 +2,8 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 
 local Window = Library.CreateLib("Entity Spawner (Private Kardin Hong Edition)", "Sentinel")
 
-local Tab = Window:NewTab("Spawn")
+local Tab = Window:NewTab("Entities")
 local Section = Tab:NewSection("Entities")
-Section:NewLabel("Click to spawn, W Kardin Hong")
 
 Section:NewButton("Summon Halt", "Summon the blue blanket", function()
     require(game.ReplicatedStorage.ClientModules.EntityModules.Shade).stuff(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game),
@@ -192,6 +191,7 @@ local a = game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game
 require(a.RemoteListener.Modules.SpiderJumpscare)(require(a), workspace.CurrentRooms["0"].Assets.Dresser.DrawerContainer, 0.2)
 end)
 
+local Tab = Window:NewTab("Features")
 local Section = Tab:NewSection("Features")
 
 Section:NewButton("Summon Seek Eyes", "omg seek ", function()
