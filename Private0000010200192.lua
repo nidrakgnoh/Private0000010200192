@@ -21,6 +21,36 @@ tb.WaitTime=2.5
 loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/storage/main/entitySpawner.lua")().runEntity("Ambush")
 end)
 
+Section:NewButton("Summon Markiplier", "Summon the mark", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/scoutzers85/what/blob/main/markiplier.rbxm?raw=true",
+    Speed = 300,
+    DelayTime = 4,
+    HeightOffset = 0,
+    CanKill = false,
+    BreakLights = true,
+    FlickerLights = {
+        true,
+        1,
+    },
+    Cycles = {
+        Min = 2,
+        Max = 2,
+        WaitTime = 6,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.1, 1},
+        100,
+    },
+    CustomDialog = {"You died to Markiplier..", "He rebounds like ambush, but only 2 times.", "He is faster than Rush and Ambush.", "So, when the lights flicker, hide quickly!"},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
 Section:NewButton("Summon Nuke", "run", function()
    loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/storage/main/entitySpawner.lua")().createEntity("Ambush")
 local tb=entityTable["Ambush"]
@@ -78,6 +108,12 @@ tb.Ambush.Enabled=false
 tb.WaitTime=0
 loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/storage/main/entitySpawner.lua")().runEntity("Ambush")
 end)
+
+Section:NewButton("Summon Halt", "Summon the blue blanket", function()
+    require(game.ReplicatedStorage.ClientModules.EntityModules.Shade).stuff(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game),
+workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")])
+end)
+
 
 Section:NewButton("Summon Depth", "Summon the blue Ambush", function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/storage/main/entitySpawner.lua")().createEntity("Depth")
@@ -147,6 +183,216 @@ tb.FlickerLenght=5
 loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/storage/main/entitySpawner.lua")().runEntity("Ambush")
 end)
 
+Section:NewButton("Summon 404b", "Summon 404b", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/tonyBflako/thing/blob/main/404b.rbxm?raw=true",
+    Speed = 150,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = false,
+    BreakLights = true,
+    FlickerLights = {
+        false,
+        3,
+    },
+    Cycles = {
+        Min = 3,
+        Max = 3,
+        WaitTime = 0.1,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.1, 1},
+        100,
+    },
+    CustomDialog = {"You have died to 404", "He Rebounds quickly 3 times in a row and Spawns with no Warning", "He is Very identical to Ambush, Use the same mindset you got from it."},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon Abyssal", "Summon idk ambush?", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/te-agma-at/Doors-Bots-By-Electrophyll/raw/main/Abyssal.rbxm",
+    Speed = 600,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = false,
+    BreakLights = true,
+    FlickerLights = {
+        true,
+        1,
+    },
+    Cycles = {
+        Min = 2,
+        Max = 2,
+        WaitTime = 2,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.1, 1},
+        100,
+    },
+    CustomDialog = {"You died to who you call Abyssal...", "Abyssal will spawn.", "You only have 1 second to hide before he recoils!", "Fortunately, he will only do that twice.", "So use what you have learned from Ambush!"}
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon FireBrand", "Summon idk FireBrand", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/fnaclol/sussy-bois/raw/main/FireBrand3.rbxm",
+    Speed = 400,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = false,
+    BreakLights = true,
+    FlickerLights = {
+        true,
+        1,
+    },
+    Cycles = {
+        Min = 2,
+        Max = 2,
+        WaitTime = 2,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.1, 1},
+        100,
+    },
+    CustomDialog = {"You died to whom you call FireBrand", "FireBrand will be hard to survive", "When you hear him spawn you only have 2 seconds to hide", "Also the vents wont save you blame...", "Anyways good luck and subscribe to Kardin Hong."}
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon giganando", "Summon idk bigass tornado", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/tonyBflako/thing/blob/main/giganado.rbxm?raw=true",
+    Speed = 150,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = false,
+    BreakLights = true,
+    FlickerLights = {
+        false,
+        100,
+    },
+    Cycles = {
+        Min = 1,
+        Max = 4,
+        WaitTime = 0.5,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.05, 1},
+        100,
+    },
+    CustomDialog = {"What the.", "Its so damn fast?!", "Dude, just dont bother survivng him, Okay?"},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon Tornando", "Summon tornado", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/tonyBflako/thing/blob/main/tornado2.rbxm?raw=true",
+    Speed = 110,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = false,
+    BreakLights = true,
+    FlickerLights = {
+        false,
+        100,
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1,
+        WaitTime = 0.5,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.05, 1},
+        100,
+    },
+    CustomDialog = {"What the.", "thats a tornado.", "Dude, just dont bother survivng him, Okay?"},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon Gromit", "Summon GromitMug", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/te-agma-at/Doors-Bots-By-Electrophyll/blob/main/GromitMug.rbxm?raw=true",
+    Speed = (350),
+    DelayTime = (1),
+    HeightOffset = 0,
+    CanKill = false,
+    BreakLights = true,
+    FlickerLights = {
+        true,
+        100,
+    },
+    Cycles = {
+        Min = 9,
+        Max = 10,
+        WaitTime = 2,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.05, 1},
+        100,
+    },
+    CustomDialog = {"Wait a sec...", "It's so fast!", "whatever don't survive it i guess ok"},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon Squidwards house", "Summon house", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/te-agma-at/Doors-Bots-By-Electrophyll/blob/main/SquidwardsHouse.rbxm?raw=true",
+    Speed = 50,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = false,
+    BreakLights = true,
+    FlickerLights = {
+        true,
+        2,
+    },
+    Cycles = {
+        Min = 5,
+        Max = 5,
+        WaitTime = 0.3,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.1, 1},
+        100,
+    },
+    CustomDialog = {"And I would be honored if you would allow me to come to your restaurant...", "...tonight.", "T-t-t-t-t-t-tonight?!"},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
 Section:NewButton("Summon Baller", "Summon the ball man", function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/storage/main/entitySpawner.lua")().createEntity("Ambush")
 local tb=entityTable["Ambush"]
@@ -183,6 +429,249 @@ end)
 Section:NewButton("Summon Timothy", "spiderman", function()
 local a = game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game
 require(a.RemoteListener.Modules.SpiderJumpscare)(require(a), workspace.CurrentRooms["0"].Assets.Dresser.DrawerContainer, 0.2)
+end)
+
+local Tab = Window:NewTab("KillableEntities")
+local Section = Tab:NewSection("KillableEntities")
+
+Section:NewButton("Summon Markiplier", "Summon the mark", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/scoutzers85/what/blob/main/markiplier.rbxm?raw=true",
+    Speed = 300,
+    DelayTime = 4,
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    FlickerLights = {
+        true,
+        1,
+    },
+    Cycles = {
+        Min = 2,
+        Max = 2,
+        WaitTime = 6,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.1, 1},
+        100,
+    },
+    CustomDialog = {"You died to Markiplier..", "He rebounds like ambush, but only 2 times.", "He is faster than Rush and Ambush.", "So, when the lights flicker, hide quickly!"},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon 404b", "Summon 404b", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/tonyBflako/thing/blob/main/404b.rbxm?raw=true",
+    Speed = 150,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    FlickerLights = {
+        false,
+        3,
+    },
+    Cycles = {
+        Min = 3,
+        Max = 3,
+        WaitTime = 0.1,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.1, 1},
+        100,
+    },
+    CustomDialog = {"You have died to 404", "He Rebounds quickly 3 times in a row and Spawns with no Warning", "He is Very identical to Ambush, Use the same mindset you got from it."},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon Abyssal", "Summon idk ambush?", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/te-agma-at/Doors-Bots-By-Electrophyll/raw/main/Abyssal.rbxm",
+    Speed = 600,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    FlickerLights = {
+        true,
+        1,
+    },
+    Cycles = {
+        Min = 2,
+        Max = 2,
+        WaitTime = 2,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.1, 1},
+        100,
+    },
+    CustomDialog = {"You died to who you call Abyssal...", "Abyssal will spawn.", "You only have 1 second to hide before he recoils!", "Fortunately, he will only do that twice.", "So use what you have learned from Ambush!"}
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon FireBrand", "Summon idk FireBrand", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/fnaclol/sussy-bois/raw/main/FireBrand3.rbxm",
+    Speed = 400,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    FlickerLights = {
+        true,
+        1,
+    },
+    Cycles = {
+        Min = 2,
+        Max = 2,
+        WaitTime = 2,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.1, 1},
+        100,
+    },
+    CustomDialog = {"You died to whom you call FireBrand", "FireBrand will be hard to survive", "When you hear him spawn you only have 2 seconds to hide", "Also the vents wont save you blame...", "Anyways good luck and subscribe to Kardin Hong."}
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon giganando", "Summon idk bigass tornado", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/tonyBflako/thing/blob/main/giganado.rbxm?raw=true",
+    Speed = 150,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    FlickerLights = {
+        false,
+        100,
+    },
+    Cycles = {
+        Min = 1,
+        Max = 4,
+        WaitTime = 0.5,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.05, 1},
+        100,
+    },
+    CustomDialog = {"What the.", "Its so damn fast?!", "Dude, just dont bother survivng him, Okay?"},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon Tornando", "Summon tornado", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/tonyBflako/thing/blob/main/tornado2.rbxm?raw=true",
+    Speed = 110,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    FlickerLights = {
+        false,
+        100,
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1,
+        WaitTime = 0.5,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.05, 1},
+        100,
+    },
+    CustomDialog = {"What the.", "thats a tornado.", "Dude, just dont bother survivng him, Okay?"},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon Gromit", "Summon GromitMug", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/te-agma-at/Doors-Bots-By-Electrophyll/blob/main/GromitMug.rbxm?raw=true",
+    Speed = (350),
+    DelayTime = (1),
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    FlickerLights = {
+        true,
+        100,
+    },
+    Cycles = {
+        Min = 9,
+        Max = 10,
+        WaitTime = 2,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.05, 1},
+        100,
+    },
+    CustomDialog = {"Wait a sec...", "It's so fast!", "whatever don't survive it i guess ok"},
+})
+-- Run the created entity
+Creator.runEntity(entity)
+end)
+
+Section:NewButton("Summon Squidwards house", "Summon house", function()
+   local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entity = Creator.createEntity({
+    Model = "https://github.com/te-agma-at/Doors-Bots-By-Electrophyll/blob/main/SquidwardsHouse.rbxm?raw=true",
+    Speed = 50,
+    DelayTime = 2,
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    FlickerLights = {
+        true,
+        2,
+    },
+    Cycles = {
+        Min = 5,
+        Max = 5,
+        WaitTime = 0.3,
+    },
+    CamShake = {
+        true,
+        {5, 15, 0.1, 1},
+        100,
+    },
+    CustomDialog = {"And I would be honored if you would allow me to come to your restaurant...", "...tonight.", "T-t-t-t-t-t-tonight?!"},
+})
+-- Run the created entity
+Creator.runEntity(entity)
 end)
 
 local Tab = Window:NewTab("Features")
