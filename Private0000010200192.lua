@@ -79,12 +79,6 @@ tb.WaitTime=0
 loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/storage/main/entitySpawner.lua")().runEntity("Ambush")
 end)
 
-Section:NewButton("Summon Halt", "Summon the blue blanket", function()
-    require(game.ReplicatedStorage.ClientModules.EntityModules.Shade).stuff(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game),
-workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")])
-end)
-
-
 Section:NewButton("Summon Depth", "Summon the blue Ambush", function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/storage/main/entitySpawner.lua")().createEntity("Depth")
 local tb=entityTable["Depth"]
