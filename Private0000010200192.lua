@@ -4,11 +4,7 @@ local Window = Library.CreateLib("Entity Spawner (Private Kardin Hong Edition)",
 
 local Tab = Window:NewTab("Spawn")
 local Section = Tab:NewSection("Entities")
-
-
-Section:NewLabel("Click to spawn, too lazy for keybinds.")
-
-
+Section:NewLabel("Click to spawn, W Kardin Hong")
 
 Section:NewButton("Summon Halt", "Summon the blue blanket", function()
     require(game.ReplicatedStorage.ClientModules.EntityModules.Shade).stuff(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game),
@@ -191,17 +187,12 @@ Section:NewButton("Summon Glitch", "Summon Mr. Teleport", function()
 workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")])
 end)
 
-Section:NewButton("BloodRoom", "where jack why screen blood", function()
-local v1 = require(game.ReplicatedStorage.ClientModules.Module_Events)
-local room = workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")]
-local seconds = 5
-v1.tryp(workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")], seconds)
-end)
-
 Section:NewButton("Summon Timothy", "spiderman", function()
 local a = game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game
 require(a.RemoteListener.Modules.SpiderJumpscare)(require(a), workspace.CurrentRooms["0"].Assets.Dresser.DrawerContainer, 0.2)
-  	end)
+end)
+
+local Section = Tab:NewSection("Features")
 
 Section:NewButton("Summon Seek Eyes", "omg seek ", function()
 local a = game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game
@@ -218,6 +209,13 @@ Section:NewButton("HeartBeat", "HeartAttack ", function()
     for i=1,10 do
     firesignal(game.ReplicatedStorage.Bricks.ClutchHeartbeat.OnClientEvent, 2)
 end
+end)
+
+Section:NewButton("BloodRoom", "where jack why screen blood", function()
+local v1 = require(game.ReplicatedStorage.ClientModules.Module_Events)
+local room = workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")]
+local seconds = 5
+v1.tryp(workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")], seconds)
 end)
 
 Section:NewButton("Break Light", "Breaks Light ", function()
